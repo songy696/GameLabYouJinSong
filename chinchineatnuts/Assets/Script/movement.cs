@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class movement : MonoBehaviour {
 
@@ -24,6 +26,7 @@ public class movement : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
 
    
+
         moveSpeed = 30f;
         turnSpeed = 100f;
         speed = 20f;
@@ -38,10 +41,14 @@ public class movement : MonoBehaviour {
 
     }
 
+
+    public int sceneNum;
+
     // Update is called once per frame
     void Update()
     {
       
+
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -103,6 +110,10 @@ public class movement : MonoBehaviour {
         if (count >= 10)
         {
             winText.text = "You Win!";
+        }
+
+        if (count >= 5){
+            SceneManager.LoadScene(sceneNum);
         }
     }
 }
