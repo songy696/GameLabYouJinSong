@@ -336,11 +336,13 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 879399269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 556f2f0c89a9d4eff9e2bd22f339fdf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  rb: {fileID: 0}
 --- !u!61 &879399272
 BoxCollider2D:
   m_ObjectHideFlags: 0

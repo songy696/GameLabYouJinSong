@@ -9,7 +9,8 @@ public class batOneController : MonoBehaviour {
 		
 	}
 
-    public float speed; 
+    public float speed;
+    public Rigidbody rb;
 
 	// Update is called once per frame
 	void Update () {

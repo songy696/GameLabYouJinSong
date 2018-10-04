@@ -11,6 +11,6 @@ public class pingPongMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		         //Vector2 start = new Vector2(-11f,0f);         //Vector2 end = new Vector2(11f,0f);         //Vector2 moving = Vector2.Lerp(start, end, Mathf.PingPong(Time.time, 1));         //transform.position = moving;
+		         Vector2 start = new Vector2(-11f,0f);         Vector2 end = new Vector2(11f,0f);         Vector2 moving = Vector2.Lerp(start, end, Mathf.PingPong(Time.time, 1));         transform.position = moving;
 	}
 }
