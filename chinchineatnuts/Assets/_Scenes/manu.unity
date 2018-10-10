@@ -180,7 +180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.7
-  m_Text: 'How to win: collect 10 boxes before 60 secs
+  m_Text: 'How to win: collect 8 boxes before 60 secs
 
     Keys:
 

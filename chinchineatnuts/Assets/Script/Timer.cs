@@ -2,41 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
 
-    public Text timeText;
-    float totalTime = 60;
-
-    private float startTime;
+    private float totalTime = 60f;
+    public string levelToLoad;
+    Text text;
+    private Text startTime;
 
 
     // Use this for initialization
     void Start()
     {
-        startTime = Time.time;
+        startTime = GetComponent<Text>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        float t = totalTime = Time.time - startTime;
-
-        //string minutes = ((int)t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
-
-        timeText.text = "Time: " + seconds;
+        totalTime -= Time.deltaTime;
+        startTime.text = totalTime.ToString("f2");
+        if (totalTime <= 0)
+        {
+            SceneManager.GetSceneByName("manu");
+        }
 
     }
 
-
-
-    //public void Finnish(){
-
-     //   Finnish = true;
-     //   timeText.color = Color.black;
-     //}
 
 }

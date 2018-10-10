@@ -3121,7 +3121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ad57c0dc8ae456ab70767adcb06ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 689264613}
+  levelToLoad: 0
 --- !u!4 &1801142666
 Transform:
   m_ObjectHideFlags: 0
@@ -3172,7 +3172,7 @@ MonoBehaviour:
   upforce: 0
   countText: {fileID: 609065606}
   winText: {fileID: 521731764}
-  onGround: 1
+  onGround: 0
   sceneNum: 2
 --- !u!4 &1813498573 stripped
 Transform:
@@ -3202,7 +3202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ad57c0dc8ae456ab70767adcb06ea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
+  levelToLoad: 0
 --- !u!1 &1846389339
 GameObject:
   m_ObjectHideFlags: 0

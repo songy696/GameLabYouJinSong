@@ -25,8 +25,6 @@ public class movement : MonoBehaviour {
 
         rb = GetComponent<Rigidbody>();
 
-   
-
         moveSpeed = 30f;
         turnSpeed = 100f;
         speed = 20f;
@@ -107,12 +105,12 @@ public class movement : MonoBehaviour {
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 10)
+        if (count >= 8)
         {
             winText.text = "You Win!";
         }
 
-        if (count >= 5){
+        if (count >= 8){
             SceneManager.LoadScene(sceneNum);
         }
     }
