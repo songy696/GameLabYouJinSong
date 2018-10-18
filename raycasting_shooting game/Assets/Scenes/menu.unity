@@ -383,7 +383,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Shout Shout Game
+  m_Text: Shoot Shoot Game
 --- !u!222 &553787086
 CanvasRenderer:
   m_ObjectHideFlags: 0
