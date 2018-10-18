@@ -14,13 +14,18 @@ public class movement : MonoBehaviour {
     public float upforce;
     public Text countText;
     public Text winText;
+    public Text timeText;
+    private Text startTime;
+
+    private float totalTime = 60f;
+    public string levelToLoad;
+    Text text;
 
     public bool onGround;
 
     private Rigidbody rb;
     private int count;
 
-    // Use this for initialization
     void Start () {
 
         rb = GetComponent<Rigidbody>();
@@ -32,21 +37,18 @@ public class movement : MonoBehaviour {
 
         onGround = true;
 
-        //rb = GetComponent<Rigidbody>();
         count = 0;
         SetCountText();
         winText.text = "";
+
 
     }
 
 
     public int sceneNum;
 
-    // Update is called once per frame
     void Update()
     {
-      
-
 
         if (Input.GetKey(KeyCode.A))
         {
@@ -62,7 +64,7 @@ public class movement : MonoBehaviour {
 
         //if (Input.GetKey(KeyCode.W))
         //{
-            transform.Translate(Vector3.right * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
 
         //}
 
@@ -73,23 +75,19 @@ public class movement : MonoBehaviour {
 
         }
 
-        //if (Input.GetKey(KeyCode.Space)){
-        //    GetComponent<Rigidbody>().AddForce(Vector3.down * upforce, ForceMode.Impulse);
-        //}
 
-        //if (Input.GetKey(KeyCode.Space))
-        //{
-        //    if (Input.GetButtonUp("Jump"))
-        //    {
-        //        rb.velocity = new Vector3(0f, 5f, 0f);
-        //        onGround = false;
-        //    }
-        //}
 
+        totalTime -= Time.deltaTime;
+        print(totalTime);
+        timeText.text = "time is: " + totalTime.ToString();
+        if (totalTime <= 0)
+        {
+            print("——————————— Oh no! Change Scene! ——————————— ——————————— ——————————— ");
+            SceneManager.LoadScene(sceneNum);
+        }
 
 
     }
-
 
 
     void OnTriggerEnter(Collider other)
@@ -101,6 +99,7 @@ public class movement : MonoBehaviour {
             SetCountText();
         }
     }
+
 
     void SetCountText()
     {
