@@ -42,7 +42,7 @@ public class repeatingBackgrounds : MonoBehaviour
         //    transform.position = newPos;
         //}
 
-        if (transform.position.x < - 24){
+        if (transform.position.x < - 20){
             transform.position = startPosition;
         }
 

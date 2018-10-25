@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - sleeper
+  - Weapon
   layers:
   - Default
   - TransparentFX
