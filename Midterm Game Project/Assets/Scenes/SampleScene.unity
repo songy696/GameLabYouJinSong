@@ -1603,7 +1603,7 @@ MonoBehaviour:
   - {fileID: 229010428}
   - {fileID: 1613094997}
   - {fileID: 319559672}
-  timeBetweenWaves: 3
+  timeBetweenWaves: 4
   state: 2
 --- !u!4 &1751883241
 Transform:
