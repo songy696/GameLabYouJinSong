@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponScript : MonoBehaviour
 {
@@ -21,11 +22,23 @@ public class WeaponScript : MonoBehaviour
 
     public int damageToGive;
 
+    public Text countText;
+
+    private int count;
+
+    public Text winText;
+
+
     void Start()
     {
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         circleCollider = GetComponent<CircleCollider2D>();
+
+        count = 0;
+        SetCountText();
+
+
     }
 
     // Update is called once per frame
@@ -81,8 +94,22 @@ public class WeaponScript : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             other.gameObject.GetComponent<Enemy>().HurtEnemy(damageToGive);
+            count = count + 1;
+            SetCountText();
+        }
+
+       
+    }
+    void SetCountText()
+    {
+        countText.text = "Count: " + count.ToString();
+        if (count >= 30)
+        {
+            winText.text = "SLEPT WELL!";
         }
     }
+
+
 
     void StopCutting()
     {

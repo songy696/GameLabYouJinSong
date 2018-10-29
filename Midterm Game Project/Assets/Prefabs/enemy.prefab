@@ -101,7 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   CurrentHealth: 0
-  MaxHealth: 4
+  MaxHealth: 2
+  damageToGive: 1
 --- !u!212 &212357244841134352
 SpriteRenderer:
   m_ObjectHideFlags: 1

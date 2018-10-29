@@ -7,7 +7,6 @@ public class RestartScript : MonoBehaviour {
 
     public string scene;
 
-    public void restartScene(){
-        SceneManager.LoadScene(scene);
-    }
+    public void LoadScene(string sceneName)
+    {         SceneManager.LoadScene("SampleScene");     }
 }
