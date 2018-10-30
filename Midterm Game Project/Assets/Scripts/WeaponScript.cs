@@ -103,7 +103,7 @@ public class WeaponScript : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 30)
+        if (count >= 100)
         {
             winText.text = "SLEPT WELL!";
         }

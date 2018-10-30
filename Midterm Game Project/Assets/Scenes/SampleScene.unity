@@ -337,8 +337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 41.9}
-  m_SizeDelta: {x: 397.3, y: 90.4}
+  m_AnchoredPosition: {x: 0, y: 8.2}
+  m_SizeDelta: {x: 647.4, y: 249.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248891890
 MonoBehaviour:
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.08282871, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -372,7 +372,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAME OVER
+  m_Text: NO MORE SWEET SLEEP!
 --- !u!222 &248891891
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -889,7 +889,7 @@ GameObject:
   - component: {fileID: 676306656}
   - component: {fileID: 676306652}
   m_Layer: 0
-  m_Name: djaksghreioqbg_0
+  m_Name: SLEEPER
   m_TagString: sleeper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1236,7 +1236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -47.89}
+  m_AnchoredPosition: {x: 0, y: -108.3}
   m_SizeDelta: {x: 160.84, y: 41.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &732892246
@@ -2035,15 +2035,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: noisiness
-    enemy: {fileID: 4337547293614550, guid: 17f0e1a906919436596ad715358e661e, type: 2}
+    enemy: {fileID: 4536538083428782, guid: 7e5f582578ed642a29beb1fcb311e66c, type: 2}
     count: 4
     rate: 1
   - name: brightness
-    enemy: {fileID: 4539425734467860, guid: eaf6e19c29a60462cb3e44f971e3b8ac, type: 2}
+    enemy: {fileID: 4463236896738796, guid: a15e9b65cc9b2484b9874b95bbaf9dea, type: 2}
     count: 5
     rate: 1.5
   - name: both
-    enemy: {fileID: 4331766979397604, guid: 45f5cf73d0865429d868a3ee6ff6c205, type: 2}
+    enemy: {fileID: 4207788794098730, guid: c54cfb5c75e414679b32c6429321f8fb, type: 2}
     count: 6
     rate: 2
   spawnPoints:
@@ -2148,8 +2148,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1881138529}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.155, z: 0}
-  m_LocalScale: {x: 0.54728454, y: 0.54728454, z: 0.54728454}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
